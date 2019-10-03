@@ -2,22 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://wildan.github.io/</loc>
-     <lastmod>2019-09-19</lastmod>
+     <lastmod>2019-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://wildan.github.io/statistik deskriptif/</loc>
-     <lastmod>2019-09-19</lastmod>
+     <lastmod>2019-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://wildan.github.io/jarak/</loc>
-     <lastmod>2019-09-19</lastmod>
+     <lastmod>2019-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://wildan.github.io/missing value/</loc>
-     <lastmod>2019-09-19</lastmod>
+     <lastmod>2019-10-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wildan.github.io/Decision Tree/</loc>
+     <lastmod>2019-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
