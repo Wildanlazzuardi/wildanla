@@ -13,7 +13,7 @@
         <meta name="description" content="Repository Untuk Tugas">
       
       
-        <link rel="canonical" href="https://wildan.github.io/jarak/">
+        <link rel="canonical" href="https://wildan.github.io/clustering/">
       
       
         <meta name="author" content="wildan lazzuardi">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Mengukur Jarak - (180411100037) wildan lazzuardi</title>
+        <title>Clustering - (180411100037) wildan lazzuardi</title>
       
     
     
@@ -118,7 +118,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#menghitung-jarak-data" tabindex="1" class="md-skip">
+      <a href="#clustering-categorical-data-with-k-modes-k-means-k-prototype" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -144,7 +144,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Mengukur Jarak
+                Clustering
               
             </span>
           
@@ -277,91 +277,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Mengukur Jarak
-      </label>
-    
-    <a href="./" title="Mengukur Jarak" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../jarak/" title="Mengukur Jarak" class="md-nav__link">
       Mengukur Jarak
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#jarak-minkowski" class="md-nav__link">
-    Jarak Minkowski
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#jarak-manhattan" class="md-nav__link">
-    Jarak Manhattan
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#jarak-euclidean" class="md-nav__link">
-    Jarak Euclidean
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#jarak-average" class="md-nav__link">
-    Jarak Average
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#jarak-weighted-euclidean" class="md-nav__link">
-    Jarak Weighted Euclidean
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#jarak-chord" class="md-nav__link">
-    Jarak Chord
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#jarak-mahalanobis" class="md-nav__link">
-    Jarak Mahalanobis
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -393,11 +313,116 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../clustering/" title="Clustering" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Clustering
+      </label>
+    
+    <a href="./" title="Clustering" class="md-nav__link md-nav__link--active">
       Clustering
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prosedur-pengelompokan" class="md-nav__link">
+    Prosedur Pengelompokan
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fungsi-jarak" class="md-nav__link">
+    Fungsi Jarak
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proses-clustering" class="md-nav__link">
+    Proses Clustering
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pengetian-rumus-k-means" class="md-nav__link">
+    Pengetian Rumus K-Means
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metode-k-modes" class="md-nav__link">
+    Metode K-Modes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rumus-k-modes" class="md-nav__link">
+    Rumus K-Modes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metode-k-prototype" class="md-nav__link">
+    Metode K-Prototype
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rumus-k-prototype" class="md-nav__link">
+    Rumus K-Prototype
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -422,51 +447,76 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#jarak-minkowski" class="md-nav__link">
-    Jarak Minkowski
+  <a href="#prosedur-pengelompokan" class="md-nav__link">
+    Prosedur Pengelompokan
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fungsi-jarak" class="md-nav__link">
+    Fungsi Jarak
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proses-clustering" class="md-nav__link">
+    Proses Clustering
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pengetian-rumus-k-means" class="md-nav__link">
+    Pengetian Rumus K-Means
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#jarak-manhattan" class="md-nav__link">
-    Jarak Manhattan
+  <a href="#metode-k-modes" class="md-nav__link">
+    Metode K-Modes
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rumus-k-modes" class="md-nav__link">
+    Rumus K-Modes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#jarak-euclidean" class="md-nav__link">
-    Jarak Euclidean
+  <a href="#metode-k-prototype" class="md-nav__link">
+    Metode K-Prototype
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rumus-k-prototype" class="md-nav__link">
+    Rumus K-Prototype
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#jarak-average" class="md-nav__link">
-    Jarak Average
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#jarak-weighted-euclidean" class="md-nav__link">
-    Jarak Weighted Euclidean
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#jarak-chord" class="md-nav__link">
-    Jarak Chord
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#jarak-mahalanobis" class="md-nav__link">
-    Jarak Mahalanobis
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -486,65 +536,53 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/wildanlazzuardi/edit/master/docs/jarak.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/wildanlazzuardi/edit/master/docs/clustering.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="menghitung-jarak-data"><strong>Menghitung Jarak Data</strong><a class="headerlink" href="#menghitung-jarak-data" title="Permanent link">&para;</a></h1>
-<h2 id="jarak-minkowski"><strong>Jarak Minkowski</strong><a class="headerlink" href="#jarak-minkowski" title="Permanent link">&para;</a></h2>
-<div class= "justify">Jarak Minkowski adalah metrik dalam ruang vektor numerik yang dapat dianggap sebagai generalisasi dari jarak Euclidean dan jarak Manhattan. Jarak Minkowski dapat digambarkan dengan : </div>
-
-<p>$$
-d _ { \operatorname { min } } = ( \ sum _ { i = 1 } ^ { n } | x _ { i } - y _ { i } | ^ { m }  ) ^ { \frac { 1 } { m } } , m \geq 1
-$$</p>
-<p>Keterangan :</p>
+                <h1 id="clustering-categorical-data-with-k-modes-k-means-k-prototype"><strong>Clustering Categorical Data</strong> With k-Modes, K-Means, K-Prototype<a class="headerlink" href="#clustering-categorical-data-with-k-modes-k-means-k-prototype" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>INTRODUCTION</strong></p>
+<p><div style= "justify">Analisis Clustering adalah proses yang tidak terawasi untuk mempartisi sekelompok objek data menjadi
+cluster, dengan tujuan untuk mengelompokkan objek yang memiliki kesamaan tinggi ke dalam cluster yang sama, sambil memisahkan
+benda yang berbeda menjadi kelompok yang berbeda. Clustering adalah tugas utama dari analisis data, dan itu sudah
+dipelajari secara luas di bidang penambangan data dan pembelajaran mesin. Teknik pengelompokan
+dapat secara kasar dibedakan sebagai pengelompokan keras dan lunak, penelitian ini terbatas pada pengelompokan keras
+analisis, di mana setiap objek milik satu dan hanya satu kluster. Dalam penelitian penambangan data, banyak upaya telah dilakukan pada pengembangan teknik baru untuk pengelompokan data kategorikal
+</div></p>
+</blockquote>
+<h2 id="prosedur-pengelompokan"><strong>Prosedur Pengelompokan</strong><a class="headerlink" href="#prosedur-pengelompokan" title="Permanent link">&para;</a></h2>
+<p>Untuk menentukan clustering itu tidak sembarangan, tetapi ada prosedur pengelompokannya yang terdiri dari empat langkah dengan jalur umpan balik. berikut adalah prosedur dalam bentuk flowchart.</p>
+<p>.<img alt="flowchart" src="C:\Users\Windows 10\Pictures\Screenshots\flowchart.png" /></p>
+<p>Dari gambar diatas diketahui bahwa prosedur pengelompokan ada 4 tahapan, yaitu :</p>
 <ul>
-    <li>m = bilangan riel positif</li>
-    <li>xi dan yi = dua vektor dalam n</li>
+<li>Pertama adalah Pre-processing yaitu ada data yang akan di kelompokan menjadi cluster, kemudian proses pemilihan fitur dan normalisasi</li>
+<li>Kemudian adalah Clustering yaitu pemilihan algoritma dan fungsi jarak pemilihan parameter algoritma penerapan algoritma</li>
+<li>Setelah itu didapat kandidat partisi yang mana digunakan untuk pemilihan teknik validasi dan penerapan teknik validasi</li>
+<li>Dan proses akhir adalah didapat kelompok partisi yang sebenarnya yang tidak dapat dikelompokkan lagi, lalu didapatlah informasi.</li>
 </ul>
-
-<h2 id="jarak-manhattan"><strong>Jarak Manhattan</strong><a class="headerlink" href="#jarak-manhattan" title="Permanent link">&para;</a></h2>
-<p>Jarak Manhattan adalah jarak antara dua titik diukur sepanjang sumbu di sudut kanan.  Pada jarak manhattan sama seperti jarak minkowski, yaitu jarak manhattan sensitif terhadap outlier dengan m = 1. Jarak manhattan digambarkan dengan :
-$$
-d _ { \operatorname { man } } = \sum _ { i = 1 } ^ { n } \left| x _ { i } - y _ { i } \right|
-$$</p>
-<h2 id="jarak-euclidean"><strong>Jarak Euclidean</strong><a class="headerlink" href="#jarak-euclidean" title="Permanent link">&para;</a></h2>
-<p>Jarak Euclidean antara dua titik di bidang atau ruang 3 dimensi mengukur panjang segmen yang menghubungkan dua titik. Teorema Pythagoras dapat digunakan untuk menghitung jarak antara dua titik, seperti pada rumus yang berikut ini :
-$$
-\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
-$$</p>
-<script type = "text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-
-<h2 id="jarak-average"><strong>Jarak Average</strong><a class="headerlink" href="#jarak-average" title="Permanent link">&para;</a></h2>
-<p>Jarak Average adalah jarak yang menggunakan rata-rata dari jarak euclidean untuk memperbaiki hasil. Untuk dua titik yaitu x dan y dalam dimensi n. Jarak Average dapat digambarkan pada rumus :
-$$
-d _ { a v e } =  \left ( \frac { 1 } { n } \sum _ { i = 1 } ^ { n } ( x _ { i } - y _ { i } ) ^ { 2 } \right) ^ { \frac { 1 } { 2 } }
-$$</p>
-<h2 id="jarak-weighted-euclidean"><strong>Jarak Weighted Euclidean</strong><a class="headerlink" href="#jarak-weighted-euclidean" title="Permanent link">&para;</a></h2>
-<p>Jarak Weighted Euclidean adalah pengukuran jarak dengan menggunakan modifikasi dari jarak Euclidean. Perhitungannya berdasarkan tingkatan penting dari masing-masing atribut yang ditentukan.
-$$
-d _ { w e } = \left ( \sum _ { i = 1 } ^ { n } w _ { i } ( x _ { i } - y _ { i } \right) ^ { 2 } ) ^ { \frac { 1 } { 2 } }
-$$
-Keterangan :</p>
+<h3 id="fungsi-jarak">Fungsi Jarak<a class="headerlink" href="#fungsi-jarak" title="Permanent link">&para;</a></h3>
+<p>​   Untuk menghitung jarak (atau ketidaksamaan) antara dua objek X dan Y yang dijelaskan oleh atribut k kategori, fungsi jarak dalam mode-k didefinisikan sebagai:</p>
+<p><img alt="Screenshot (47)" src="C:\Users\Windows 10\Pictures\Screenshots\Screenshot (47).png" /></p>
+<h3 id="proses-clustering"><strong>Proses Clustering</strong><a class="headerlink" href="#proses-clustering" title="Permanent link">&para;</a></h3>
+<p>​   Untuk mengelompokkan set data kategorikal X ke dalam k cluster, proses pengelompokan k-mode terdiri dari langkah-langkah berikut:</p>
 <ul>
-    <li>wi = bobot pada atribut ke i</li>
+<li>Langkah 1: Pilih secara acak k objek unik sebagai pusat cluster awal (mode).</li>
+<li>Langkah 2: Hitung jarak antara setiap objek dan mode kluster; menetapkan objek ke cluster yang pusatnya memiliki jarak terpendek ke objek; ulangi langkah ini sampai semua objek ditugaskan ke cluster.</li>
+<li>Langkah 3: Pilih mode baru untuk setiap kluster dan bandingkan dengan mode sebelumnya. Jika berbeda, kembali ke Langkah 2; jika tidak, berhentilah.</li>
 </ul>
+<h3 id="pengetian-rumus-k-means"><strong>Pengetian Rumus K-Means</strong><a class="headerlink" href="#pengetian-rumus-k-means" title="Permanent link">&para;</a></h3>
+<p>​   K-Means adalah salah satu algoritma clustering / pengelompokan data yang bersifat Unsupervised Learning, yang berarti masukan dari algoritma ini menerima data tanpa label kelas.</p>
+<p><img alt="img" src="https://4.bp.blogspot.com/-rb2XXOayk-Q/VhPREJBapVI/AAAAAAAAA9E/HXibvUie9nk/s1600/Rumus%2BEuclidian%2BDistance.png" /></p>
+<h2 id="metode-k-modes"><strong>Metode K-Modes</strong><a class="headerlink" href="#metode-k-modes" title="Permanent link">&para;</a></h2>
+<div style= "justify">K-Modes merupakan pengembangan dari algoritma clustering K-means untuk menangani data kategorik di mana means diganti oleh modes. K-Modes menggunakan simple matching meassure dalam penentuan similarity dari suatu klaster. </div>
 
-<h2 id="jarak-chord"><strong>Jarak Chord</strong><a class="headerlink" href="#jarak-chord" title="Permanent link">&para;</a></h2>
-<p>Jarak Chord adalah cara perhitungan melalui modifikasi jarak Euclidean untuk mengatasi kekurangan dari jarak tersebut. Data yang tidak dinormalisasi juga dapat digunakan untuk Jarak Chord. Jarak Chord dapat dirumuskan sebagai berikut :
-$$
-d _ { \text {chord} } = \left ( 2 - 2 \frac { \sum _ { i = 1 } ^ { n } x _ { i } y _ { i } } { | x | _ { 2 } | y | _ { 2 } } \right) ^ { \frac { 1 } { 2 } }
-$$</p>
-<h2 id="jarak-mahalanobis"><strong>Jarak Mahalanobis</strong><a class="headerlink" href="#jarak-mahalanobis" title="Permanent link">&para;</a></h2>
-<p>ekstraksi hyperellipsoidal clusters didapat dari Jarak Mahalanobis yang teratur. Distorsi yang disebabkan oleh korelasi linear antara fitur dapat diatasi dengan jarak Mahalanobis. Rumus jarak Mahalanobis dapat digambarkan dengan :
-$$
-d _ { m a h } = \sqrt { ( x - y ) S ^ { - 1 } ( x - y ) ^ { T } }
-$$
-Keterangan :</p>
-<ul>
-    <li>S = matrik covariance data</li>
-</ul>
+<h3 id="rumus-k-modes"><strong>Rumus K-Modes</strong><a class="headerlink" href="#rumus-k-modes" title="Permanent link">&para;</a></h3>
+<p><img alt="img" src="https://miro.medium.com/max/558/1*HxkHjH647N_9wKjqUBeJiw.png" /></p>
+<h2 id="metode-k-prototype"><strong>Metode K-Prototype</strong><a class="headerlink" href="#metode-k-prototype" title="Permanent link">&para;</a></h2>
+<div style= "justify">Tujuan dari simulasi ini adalah mencoba menerapkan algoritma K-Prototype pada data campuran  numerik  dan  kategorikal. Ada  tahap preparation diperlakukan terhadap data point numerik normalisasi terlebih dahulu. </div>
 
-<script type = "text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<h3 id="rumus-k-prototype"><strong>Rumus K-Prototype</strong><a class="headerlink" href="#rumus-k-prototype" title="Permanent link">&para;</a></h3>
+<p><img alt="1_HxkHjH647N_9wKjqUBeJiw" src="E:\Kuliah\semester 3\pendat\1_HxkHjH647N_9wKjqUBeJiw.png" /></p>
                 
                   
                 
@@ -565,7 +603,7 @@ Keterangan :</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../statistik deskriptif/" title="Statistik deskriptif" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Decision Tree/" title="Decision Tree" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -574,25 +612,11 @@ Keterangan :</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Statistik deskriptif
+                Decision Tree
               </span>
             </div>
           </a>
         
-        
-          <a href="../missing value/" title="Missing value" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Missing value
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>
